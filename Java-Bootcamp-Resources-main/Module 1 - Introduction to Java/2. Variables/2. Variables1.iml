@@ -15,7 +15,8 @@
       <sourceFolder url="file://$MODULE_DIR$/Workbook 2.4 Solution" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Workbook 2.5" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Workbook 2.5 Solution" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/MathOperations java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/MathOperations and TypeCasting" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Scanner" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
