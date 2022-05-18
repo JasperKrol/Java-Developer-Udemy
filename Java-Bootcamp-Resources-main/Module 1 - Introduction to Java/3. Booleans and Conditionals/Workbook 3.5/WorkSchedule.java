@@ -1,11 +1,18 @@
 public class WorkSchedule {
     public static void main(String[] args) {
-        int day = 3;  
+        int day = 3;
         boolean holiday = true;
-         
-        // if it's a holiday, print: "woohoo, no work!");
-        // if it's the weekend, print: "it's the weekend, no work!"
-        // otherwise, print: "Wake up at 7:00 :( ";
-        }
+        String text = "";
 
+        if (day == 6 || day == 7) {
+            text = "it's the weekend, no work!";
+            System.out.println(text);
+        } else if (holiday) {
+            text = "woohoo, no work!";
+            System.out.println(text);
+        } else {
+            System.out.println("Wake up at 7:00 :( ");
+        }
     }
+
+}
