@@ -12,13 +12,12 @@ public class RockPaperScissors {
 
         //Task 1: See if the user wants to play.
 
-        if (playerReady.equals("yes")) {
+        if (playerReady.equalsIgnoreCase("yes")) {
             System.out.println("\nGreat!");
             System.out.println("rock – paper – scissors, shoot!");
-            computerChoice();
             String yourChoice = scan.next();
             String computerChoice = computerChoice();
-            String result = result(yourChoice, computerChoice);
+            String result = result(yourChoice,computerChoice);
             printResult(yourChoice, computerChoice, result);
 
         } else {
@@ -51,19 +50,19 @@ public class RockPaperScissors {
     public static String result(String yourChoice, String computerChoice) {
         String result = "";
 
-        if (yourChoice.equals("rock") && computerChoice.equals("scissors")) {
+        if (yourChoice.equalsIgnoreCase("rock") && computerChoice.equalsIgnoreCase("scissors")) {
             result = "You win!";
-        } else if (yourChoice.equals("rock") && computerChoice.equals("paper")) {
+        } else if (yourChoice.equalsIgnoreCase("rock") && computerChoice.equalsIgnoreCase("paper")) {
             result = "You lose!";
-        } else if (yourChoice.equals("paper") && computerChoice.equals("rock")) {
+        } else if (yourChoice.equalsIgnoreCase("paper") && computerChoice.equalsIgnoreCase("rock")) {
             result = "You win!";
-        } else if (yourChoice.equals("paper") && computerChoice.equals("scissors")) {
+        } else if (yourChoice.equalsIgnoreCase("paper") && computerChoice.equalsIgnoreCase("scissors")) {
             result = "You lose!";
-        } else if (yourChoice.equals("scissors") && computerChoice.equals("paper")) {
+        } else if (yourChoice.equalsIgnoreCase("scissors") && computerChoice.equalsIgnoreCase("paper")) {
             result = "You win!";
-        }   else if (yourChoice.equals("scissors") && computerChoice.equals("rock")) {
+        }   else if (yourChoice.equalsIgnoreCase("scissors") && computerChoice.equalsIgnoreCase("rock")) {
             result = "You lose!";
-        }  else if (yourChoice.equals(computerChoice)) {
+        }  else if (yourChoice.equalsIgnoreCase(computerChoice)) {
             result = "It's a tie!";
         }
         return result;

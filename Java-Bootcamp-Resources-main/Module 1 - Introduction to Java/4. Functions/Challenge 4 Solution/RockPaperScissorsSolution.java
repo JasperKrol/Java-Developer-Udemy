@@ -94,7 +94,7 @@ public class RockPaperScissorsSolution {
      * 
      *   3. result is "It's a tie" if:
      * 
-     *       your choice equals computer choice.
+     *       your choice.equals computer choice.
      *   
      */
 
